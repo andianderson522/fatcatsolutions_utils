@@ -10,10 +10,11 @@ import org.junit.Test;
 
 /**
  * @author andi
- * 
  */
-public class AssertiveTest {
+public final class AssertiveTest {
 
+	/**
+	 */
 	@Test
 	public void isNull() {
 		final Object object = new Object();
