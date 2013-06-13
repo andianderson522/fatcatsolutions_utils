@@ -30,6 +30,12 @@ public final class BooleanConverter {
 		if ("Y".equals(toCovertUpper)) {
 			return true;
 		}
+		if ("YES".equals(toCovertUpper)) {
+			return true;
+		}
+		if ("T".equals(toCovertUpper)) {
+			return true;
+		}
 		return false;
 	}
 }

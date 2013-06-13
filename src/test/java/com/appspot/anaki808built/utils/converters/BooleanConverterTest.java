@@ -22,5 +22,9 @@ public final class BooleanConverterTest {
 		assertTrue(result);
 		assertFalse(BooleanConverter.convert(null));
 		assertFalse(BooleanConverter.convert("n"));
+		assertTrue(BooleanConverter.convert("yEs"));
+		assertFalse(BooleanConverter.convert("no"));
+		assertTrue(BooleanConverter.convert("t"));
+		assertFalse(BooleanConverter.convert("F"));
 	}
 }
