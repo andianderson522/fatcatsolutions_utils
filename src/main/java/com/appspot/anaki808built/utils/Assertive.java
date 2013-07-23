@@ -3,10 +3,42 @@
  */
 package com.appspot.anaki808built.utils;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * @author andi
  */
 public final class Assertive {
+
+	/**
+	 * @param toTest
+	 *            {@link CharSequence}
+	 * @return boolean true if toTest contains only spaces or is null
+	 */
+	public static boolean isEmptyCharSequence(final CharSequence toTest) {
+		return !isNonEmptyCharSequence(toTest);
+	}
+
+	/**
+	 * @param toTest
+	 *            {@link CharSequence}
+	 * @return true if toTest contains only spaces and is not null
+	 */
+	public static boolean isEmptyNonNullCharSequence(final CharSequence toTest) {
+		if (toTest == null) {
+			return false;
+		}
+		return StringUtils.isNotBlank(toTest);
+	}
+
+	/**
+	 * @param toTest
+	 *            {@link CharSequence}
+	 * @return true if toTest is not null and contains characters besides spaces
+	 */
+	public static boolean isNonEmptyCharSequence(final CharSequence toTest) {
+		return StringUtils.isNotBlank(toTest);
+	}
 
 	/**
 	 * @param object
