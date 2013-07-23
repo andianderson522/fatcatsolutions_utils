@@ -99,11 +99,11 @@
 					</instrumentation>
 					<check>
 						<branchRate>85</branchRate>
-						<lineRate>80</lineRate>
+						<lineRate>75</lineRate>
 						<haltOnFailure>true</haltOnFailure>
 						<totalBranchRate>85</totalBranchRate>
 						<totalLineRate>80</totalLineRate>
-						<packageLineRate>80</packageLineRate>
+						<packageLineRate>75</packageLineRate>
 						<packageBranchRate>85</packageBranchRate>
 						<regexes>
 							<regex>
@@ -132,6 +132,11 @@
 			<version>4.4</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.1</version>
+		</dependency>     
 	</dependencies>
 	<distributionManagement>
 		<repository>
