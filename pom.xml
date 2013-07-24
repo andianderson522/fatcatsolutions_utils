@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.appspot.anaki808built</groupId>
 	<artifactId>utils</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<inceptionYear>2013</inceptionYear>
 	<name>anaki808builtutils</name>
 	<url>https://github.com/andianderson522/ankai808builtutils</url>
@@ -32,8 +32,8 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git://github.com/andianderson522/ankai808builtutils.git</connection>
-		<developerConnection>scm:git://github.com/andianderson522/ankai808builtutils.git</developerConnection>
+		<connection>scm:https://github.com/andianderson522/ankai808builtutils.git</connection>
+		<developerConnection>scm:https://github.com/andianderson522/ankai808builtutils.git</developerConnection>
 		<url>https://github.com/andianderson522/ankai808builtutils</url>
 	</scm> 
 	<build>
