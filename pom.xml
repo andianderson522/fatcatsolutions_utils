@@ -32,9 +32,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:https://github.com/andianderson522/ankai808builtutils.git</connection>
-		<developerConnection>scm:https://github.com/andianderson522/ankai808builtutils.git</developerConnection>
-		<url>https://github.com/andianderson522/ankai808builtutils</url>
+		<connection>scm:git:git@github.com/andianderson522/ankai808builtutils.git</connection>
+		<developerConnection>scm:git:git@github.com/andianderson522/ankai808builtutils.git</developerConnection>
+		<url>scm:git:git@github.com/andianderson522/ankai808builtutils.git</url>
 	</scm> 
 	<build>
 		<plugins>
@@ -121,6 +121,10 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			 <plugin>
+			         <groupId>org.apache.maven.plugins</groupId>
+				 <artifactId>maven-release-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
