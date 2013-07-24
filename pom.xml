@@ -32,9 +32,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git@github.com/andianderson522/ankai808builtutils.git</connection>
-		<developerConnection>scm:git:git@github.com/andianderson522/ankai808builtutils.git</developerConnection>
-		<url>scm:git:git@github.com/andianderson522/ankai808builtutils.git</url>
+		<connection>scm:git:andianderson522@github.com/andianderson522/ankai808builtutils.git</connection>
+		<developerConnection>scm:git:andianderson522@github.com/andianderson522/ankai808builtutils.git</developerConnection>
+		<url>scm:git:andianderson522@github.com/andianderson522/ankai808builtutils.git</url>
 	</scm> 
 	<build>
 		<plugins>
