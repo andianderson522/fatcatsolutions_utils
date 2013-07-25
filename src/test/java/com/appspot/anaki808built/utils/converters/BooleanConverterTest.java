@@ -3,6 +3,7 @@
  */
 package com.appspot.anaki808built.utils.converters;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -16,6 +17,16 @@ import org.junit.Test;
 public final class BooleanConverterTest {
 
 	private static final Random R = new Random();
+
+	/**
+	 * 
+	 */
+	@Test(timeout = 100L)
+	public void convertBooleanToYN() {
+		assertEquals("Y", BooleanConverter.convertBooleanToYN(Boolean.TRUE));
+		assertEquals("N", BooleanConverter.convertBooleanToYN(Boolean.FALSE));
+		assertEquals("N", BooleanConverter.convertBooleanToYN(null));
+	}
 
 	/**
 	 * 

@@ -212,6 +212,45 @@
 				<artifactId>maven-surefire-report-plugin</artifactId>
 				<version>2.12</version>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.0.1</version>
+				<configuration>
+					<source>${compileSource}</source>
+					<rulesets>
+						<ruleset>${basedir}/rulesets/java/braces.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/naming.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/clone.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/codesize.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/comments.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/controversial.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/coupling.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/design.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/empty.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/finalizers.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/imports.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/j2ee.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/javabeans.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/junit.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/optimizations.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/strictexception.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/strings.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/sunsecure.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/typeresolution.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/unnecessary.xml</ruleset>
+						<ruleset>${basedir}/rulesets/java/unusedcode.xml</ruleset>
+					</rulesets>	
+				</configuration>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>pmd</report>
+							<report>cpd</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
 			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-pmd-plugin</artifactId> 
 				<configuration> <targetjdk>1.5</targetjdk> <rulesets> <ruleset>/rulesets/basic.xml</ruleset> 
 				<ruleset>/rulesets/controversial.xml</ruleset> </rulesets> <format>xml</format> 

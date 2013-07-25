@@ -16,6 +16,21 @@ public final class BooleanConverter {
 
 	/**
 	 * @param toConvert
+	 *            {@link Boolean}
+	 * @return 'Y' for true 'N' for anything else
+	 */
+	public static String convertBooleanToYN(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return "N";
+		}
+		if (toConvert.booleanValue()) {
+			return "Y";
+		}
+		return "N";
+	}
+
+	/**
+	 * @param toConvert
 	 *            {@link CharSequence}
 	 * @return true for y, Y, t, T, true, TRUE, yes, YES, 1. false for all else
 	 */
