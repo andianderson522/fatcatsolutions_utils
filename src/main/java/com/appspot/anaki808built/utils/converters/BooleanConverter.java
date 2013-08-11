@@ -16,6 +16,21 @@ public final class BooleanConverter {
 
 	/**
 	 * @param toConvert
+	 *            boolean
+	 * @return "true" if boolean is true otherwise false
+	 */
+	public static String convertBooleanToTrueFalse(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return "false";
+		}
+		if (toConvert.booleanValue()) {
+			return "true";
+		}
+		return "false";
+	}
+
+	/**
+	 * @param toConvert
 	 *            {@link Boolean}
 	 * @return 'Y' for true 'N' for anything else
 	 */
