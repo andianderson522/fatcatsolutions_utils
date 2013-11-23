@@ -31,7 +31,7 @@ public final class StringCleanerTest {
 	/**
 	 * 
 	 */
-	@Test(timeout = 100L)
+	@Test(timeout = 220L)
 	public void unescapeHTMLEncoding() {
 		final CharSequence toTest = "&amp;&&lt;&gt;&#64;&#165;&yen;";
 		final CharSequence result = StringCleaner.unescapeHTMLEncoding(toTest);
