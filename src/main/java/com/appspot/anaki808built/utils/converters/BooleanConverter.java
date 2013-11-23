@@ -29,6 +29,16 @@ public final class BooleanConverter {
 		return "false";
 	}
 
+	public static String convertBooleanToYesNo(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return "no";
+		}
+		if (toConvert.booleanValue()) {
+			return "yes";
+		}
+		return "no";
+	}
+
 	/**
 	 * @param toConvert
 	 *            {@link Boolean}

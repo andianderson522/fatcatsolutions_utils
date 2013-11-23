@@ -29,10 +29,18 @@ public final class BooleanConverterTest {
 		assertEquals("false", BooleanConverter.convertBooleanToTrueFalse(null));
 	}
 
+	@Test(timeout = 100L)
+	public void convertBooleanToYesNo() {
+		final String result = BooleanConverter.convertBooleanToYesNo(Boolean.TRUE);
+		assertEquals("yes", result);
+		assertEquals("no", BooleanConverter.convertBooleanToYesNo(Boolean.FALSE));
+		assertEquals("no", BooleanConverter.convertBooleanToYesNo(null));
+	}
+
 	/**
 	 * 
 	 */
-	@Test(timeout = 100L)
+	@Test(timeout = 200L)
 	public void convertBooleanToYN() {
 		assertEquals("Y", BooleanConverter.convertBooleanToYN(Boolean.TRUE));
 		assertEquals("N", BooleanConverter.convertBooleanToYN(Boolean.FALSE));

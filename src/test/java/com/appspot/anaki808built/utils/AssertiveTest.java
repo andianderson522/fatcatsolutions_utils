@@ -16,7 +16,7 @@ public final class AssertiveTest {
 	/**
 	 * 
 	 */
-	@Test(timeout = 100L)
+	@Test(timeout = 200L)
 	public void isEmptyCharSequence() {
 		final CharSequence toTest = "ABce";
 		assertFalse(Assertive.isEmptyCharSequence(toTest));
