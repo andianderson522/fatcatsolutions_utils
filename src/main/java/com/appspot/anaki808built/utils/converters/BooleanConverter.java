@@ -14,6 +14,16 @@ public final class BooleanConverter {
 		// hide utility class
 	}
 
+	public static String convertBooleanToTF(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return "F";
+		}
+		if (toConvert.booleanValue()) {
+			return "T";
+		}
+		return "F";
+	}
+
 	/**
 	 * @param toConvert
 	 *            boolean

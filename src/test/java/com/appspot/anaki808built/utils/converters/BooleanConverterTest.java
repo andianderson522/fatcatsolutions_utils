@@ -18,6 +18,13 @@ public final class BooleanConverterTest {
 
 	private static final Random R = new Random();
 
+	@Test(timeout = 200L)
+	public void convertBooleanToTF() {
+		assertEquals("T", BooleanConverter.convertBooleanToTF(Boolean.TRUE));
+		assertEquals("F", BooleanConverter.convertBooleanToTF(Boolean.FALSE));
+		assertEquals("F", BooleanConverter.convertBooleanToTF(null));
+	}
+
 	/**
 	 * 
 	 */
