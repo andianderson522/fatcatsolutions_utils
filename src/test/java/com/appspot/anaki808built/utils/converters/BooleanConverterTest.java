@@ -54,6 +54,14 @@ public final class BooleanConverterTest {
 		assertEquals("N", BooleanConverter.convertBooleanToYN(null));
 	}
 
+	@Test(timeout = 100L)
+	public void convertBooleanToInt() {
+		final int result = BooleanConverter.convertBooleanToInt(Boolean.TRUE);
+		assertTrue(1 == result);
+		assertTrue(0 == BooleanConverter.convertBooleanToInt(Boolean.FALSE));
+		assertTrue(0 == BooleanConverter.convertBooleanToInt(null));
+	}
+
 	/**
 	 * 
 	 */

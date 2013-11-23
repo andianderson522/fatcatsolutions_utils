@@ -14,6 +14,16 @@ public final class BooleanConverter {
 		// hide utility class
 	}
 
+	public static int convertBooleanToInt(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return 0;
+		}
+		if (toConvert.booleanValue()) {
+			return 1;
+		}
+		return 0;
+	}
+
 	public static String convertBooleanToTF(final Boolean toConvert) {
 		if (Assertive.isNull(toConvert)) {
 			return "F";
