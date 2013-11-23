@@ -14,6 +14,66 @@ public final class BooleanConverter {
 		// hide utility class
 	}
 
+	public static int convertBooleanToInt(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return 0;
+		}
+		if (toConvert.booleanValue()) {
+			return 1;
+		}
+		return 0;
+	}
+
+	public static String convertBooleanToTF(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return "F";
+		}
+		if (toConvert.booleanValue()) {
+			return "T";
+		}
+		return "F";
+	}
+
+	/**
+	 * @param toConvert
+	 *            boolean
+	 * @return "true" if boolean is true otherwise false
+	 */
+	public static String convertBooleanToTrueFalse(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return "false";
+		}
+		if (toConvert.booleanValue()) {
+			return "true";
+		}
+		return "false";
+	}
+
+	public static String convertBooleanToYesNo(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return "no";
+		}
+		if (toConvert.booleanValue()) {
+			return "yes";
+		}
+		return "no";
+	}
+
+	/**
+	 * @param toConvert
+	 *            {@link Boolean}
+	 * @return 'Y' for true 'N' for anything else
+	 */
+	public static String convertBooleanToYN(final Boolean toConvert) {
+		if (Assertive.isNull(toConvert)) {
+			return "N";
+		}
+		if (toConvert.booleanValue()) {
+			return "Y";
+		}
+		return "N";
+	}
+
 	/**
 	 * @param toConvert
 	 *            {@link CharSequence}
