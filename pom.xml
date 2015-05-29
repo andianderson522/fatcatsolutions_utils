@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.appspot.anaki808built</groupId>
+	<groupId>org.fatcatsolutions</groupId>
 	<artifactId>utils</artifactId>
 	<version>0.0.3-SNAPSHOT</version>
 	<inceptionYear>2013</inceptionYear>
@@ -99,11 +99,11 @@
 					</instrumentation>
 					<check>
 						<branchRate>85</branchRate>
-						<lineRate>75</lineRate>
+						<lineRate>71</lineRate>
 						<haltOnFailure>true</haltOnFailure>
 						<totalBranchRate>85</totalBranchRate>
 						<totalLineRate>80</totalLineRate>
-						<packageLineRate>75</packageLineRate>
+						<packageLineRate>71</packageLineRate>
 						<packageBranchRate>85</packageBranchRate>
 						<regexes>
 							<regex>
@@ -114,8 +114,8 @@
 						</regexes>
 					</check>
 					<formats>
-                                                <format>xml</format>
-                                        </formats>
+						<format>xml</format>
+					</formats>
 				</configuration>
 				<executions>
 					<execution>
@@ -127,10 +127,10 @@
 				</executions>
 			</plugin>
 			<plugin>
-                                <groupId>org.apache.maven.plugins</groupId>
-                                <artifactId>maven-scm-plugin</artifactId>
-                                <version>1.8.1</version>
-                        </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>1.8.1</version>
+			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
@@ -146,12 +146,20 @@
 			<version>3.1</version>
 		</dependency>   
 		<dependency>
-                        <groupId>pmd</groupId>
-                        <artifactId>pmd</artifactId>
-                        <version>4.3</version>
-                        <scope>provided</scope>
-                </dependency>   
+			<groupId>pmd</groupId>
+			<artifactId>pmd</artifactId>
+			<version>4.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.3</version>
+			<scope>test</scope>
+		</dependency>
+		
 	</dependencies>
+	<!-- 
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
@@ -167,6 +175,7 @@
 			<url>scp://192.168.1.49/var/www/docs/anaki808builtutils/</url>
 		</site>
 	</distributionManagement>
+	 -->
 	<reporting>
 		<plugins>
 			<plugin>

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.appspot.anaki808built.utils.converters;
+package org.fatcatsolutions.anaki808built.utils.converters;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -9,6 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Random;
 
+import org.fatcatsolutions.anaki808built.utils.converters.BooleanConverter;
 import org.junit.Test;
 
 /**

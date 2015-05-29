@@ -1,21 +1,19 @@
 /**
- * 
+ *
  */
-package com.appspot.anaki808built.utils;
+package org.fatcatsolutions.anaki808built.utils;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
+import org.fatcatsolutions.anaki808built.utils.Assertive;
 import org.junit.Test;
 
 /**
  * @author andi
  */
+@SuppressWarnings("static-method")
 public final class AssertiveTest {
 
-	/**
-	 * 
-	 */
 	@Test(timeout = 200L)
 	public void isEmptyCharSequence() {
 		final CharSequence toTest = "ABce";
@@ -24,20 +22,14 @@ public final class AssertiveTest {
 		assertTrue(Assertive.isEmptyCharSequence("   "));
 	}
 
-	/**
-	 * 
-	 */
 	@Test(timeout = 100L)
-	public void isEmptyNonNullCharCharSequence() {
+	public void isEmptyNonNullCharSequence() {
 		final CharSequence toTest = "ABce";
 		assertTrue(Assertive.isEmptyNonNullCharSequence(toTest));
 		assertFalse(Assertive.isEmptyNonNullCharSequence(null));
 		assertFalse(Assertive.isEmptyNonNullCharSequence("   "));
 	}
 
-	/**
-	 * 
-	 */
 	@Test(timeout = 100L)
 	public void isNonEmptyCharSequence() {
 		final CharSequence toTest = "ABce";
@@ -46,8 +38,6 @@ public final class AssertiveTest {
 		assertFalse(Assertive.isNonEmptyCharSequence("   "));
 	}
 
-	/**
-	 */
 	@Test
 	public void isNull() {
 		final Object object = new Object();

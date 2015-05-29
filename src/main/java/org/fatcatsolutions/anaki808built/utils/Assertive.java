@@ -1,7 +1,7 @@
 /**
- * 
+ *
  */
-package com.appspot.anaki808built.utils;
+package org.fatcatsolutions.anaki808built.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -9,6 +9,10 @@ import org.apache.commons.lang3.StringUtils;
  * @author andi
  */
 public final class Assertive {
+
+	private Assertive() {
+		// hide utility class
+	}
 
 	/**
 	 * @param toTest

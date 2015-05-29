@@ -1,9 +1,9 @@
 /**
  * Jun 10, 2013
  */
-package com.appspot.anaki808built.utils.converters;
+package org.fatcatsolutions.anaki808built.utils.converters;
 
-import com.appspot.anaki808built.utils.Assertive;
+import org.fatcatsolutions.anaki808built.utils.Assertive;
 
 /**
  * @author andi Jun 10, 2013 A null safe converter for booleans
