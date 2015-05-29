@@ -22,7 +22,7 @@
 		<developer>
 			<id>Andi</id>
 			<name>Andi Anderson</name>
-			<email>cry4dawn_2000@yahoo.com</email>
+			<email>anaki808built@gmail.com</email>
 			<roles>
 				<role>Project Manager</role>
 				<role>Architect</role>
@@ -33,9 +33,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git://github.com/andianderson522/ankai808builtutils.git</connection>
-		<developerConnection>scm:git://github.com/andianderson522/ankai808builtutils.git</developerConnection>
-		<url>https://github.com/andianderson522/ankai808builtutils</url>
+		<connection>scm:git:git://github.com/andianderson522/fatcatsolutions_utils.git</connection>
+		<developerConnection>scm:git://github.com/andianderson522/fatcatsolutions_utils.git</developerConnection>
+		<url>https://github.com/andianderson522/fatcatsolutions_utils</url>
 	</scm> 
 	<build>
 		<plugins>
@@ -159,23 +159,6 @@
 		</dependency>
 		
 	</dependencies>
-	<!-- 
-	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<url>http://192.168.1.49:8081/nexus/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Repository Name</name>
-			<url>http://192.168.1.49:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-		<site>
-			<id>192.168.1.49</id>
-			<url>scp://192.168.1.49/var/www/docs/anaki808builtutils/</url>
-		</site>
-	</distributionManagement>
-	 -->
 	<reporting>
 		<plugins>
 			<plugin>
@@ -274,13 +257,6 @@
 					</reportSet>
 				</reportSets>
 			</plugin>
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-pmd-plugin</artifactId> 
-				<configuration> <targetjdk>1.5</targetjdk> <rulesets> <ruleset>/rulesets/basic.xml</ruleset> 
-				<ruleset>/rulesets/controversial.xml</ruleset> </rulesets> <format>xml</format> 
-				<linkXref>true</linkXref> <sourceEncoding>utf-8</sourceEncoding> <minimumTokens>100</minimumTokens> 
-				</configuration> </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> 
-				<artifactId>maven-checkstyle-plugin</artifactId> <version>2.9.1</version> 
-				</plugin> -->
 		</plugins>
 	</reporting>
 </project>
