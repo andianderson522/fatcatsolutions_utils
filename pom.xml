@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.fatcatsolutions</groupId>
 	<artifactId>utils</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<inceptionYear>2013</inceptionYear>
-	<name>anaki808builtutils</name>
+	<name>fatcatsolutions_utils</name>
 	<url>https://github.com/andianderson522/ankai808builtutils</url>
 	<description>Some common java utilities and wrapper classes.</description>
 	<issueManagement>
@@ -36,7 +35,8 @@
 		<connection>scm:git:git://github.com/andianderson522/fatcatsolutions_utils.git</connection>
 		<developerConnection>scm:git://github.com/andianderson522/fatcatsolutions_utils.git</developerConnection>
 		<url>https://github.com/andianderson522/fatcatsolutions_utils</url>
-	</scm> 
+	  <tag>utils-0.0.3</tag>
+  </scm> 
 	<build>
 		<plugins>
 			<plugin>
