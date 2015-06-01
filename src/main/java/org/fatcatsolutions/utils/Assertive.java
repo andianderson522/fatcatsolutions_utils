@@ -1,7 +1,7 @@
 /**
  *
  */
-package org.fatcatsolutions.anaki808built.utils;
+package org.fatcatsolutions.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -32,7 +32,7 @@ public final class Assertive {
 		if (toTest == null) {
 			return false;
 		}
-		return org.fatcatsolutions.anaki808built.utils.strings.StringUtils.isNotBlank(toTest);
+		return org.fatcatsolutions.utils.strings.StringUtils.isNotBlank(toTest);
 	}
 
 	/**

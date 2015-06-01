@@ -1,11 +1,10 @@
 /**
  *
  */
-package org.fatcatsolutions.anaki808built.utils;
+package org.fatcatsolutions.utils;
 
 import static org.junit.Assert.*;
 
-import org.fatcatsolutions.anaki808built.utils.Assertive;
 import org.junit.Test;
 
 /**

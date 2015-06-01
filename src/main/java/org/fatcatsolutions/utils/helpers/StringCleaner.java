@@ -1,10 +1,10 @@
-package org.fatcatsolutions.anaki808built.utils.helpers;
+package org.fatcatsolutions.utils.helpers;
 
 import java.text.Normalizer;
 import java.text.Normalizer.Form;
 
 import org.apache.commons.lang3.StringEscapeUtils;
-import org.fatcatsolutions.anaki808built.utils.Assertive;
+import org.fatcatsolutions.utils.Assertive;
 
 /**
  * @author andi Jul 22, 2013 Some general helper methods for cleaning up Strings

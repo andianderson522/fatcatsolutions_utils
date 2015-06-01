@@ -1,4 +1,4 @@
-package org.fatcatsolutions.anaki808built.utils.strings;
+package org.fatcatsolutions.utils.strings;
 
 public final class StringUtils {
 

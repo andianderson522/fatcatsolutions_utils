@@ -1,8 +1,8 @@
-package org.fatcatsolutions.anaki808built.utils.helpers;
+package org.fatcatsolutions.utils.helpers;
 
 import static org.junit.Assert.assertEquals;
 
-import org.fatcatsolutions.anaki808built.utils.helpers.StringCleaner;
+import org.fatcatsolutions.utils.helpers.StringCleaner;
 import org.junit.Test;
 
 /**
