@@ -3,7 +3,7 @@
  */
 package org.fatcatsolutions.utils;
 
-import org.apache.commons.lang3.StringUtils;
+import static org.fatcatsolutions.utils.strings.StringUtils.isNotBlank;
 
 /**
  * @author andi
@@ -32,7 +32,28 @@ public final class Assertive {
 		if (toTest == null) {
 			return false;
 		}
-		return org.fatcatsolutions.utils.strings.StringUtils.isNotBlank(toTest);
+		return isNotBlank(toTest);
+	}
+
+	/**
+	 * @param toCheck
+	 *            long
+	 * @return boolean true if number is negative, and not zero
+	 */
+	public static boolean isNegativeNonZeroNumber(final long toCheck) {
+		return toCheck < 0;
+	}
+
+	/**
+	 * @param toCheck
+	 *            {@link Number}
+	 * @return boolean true if number is non null, negative, and not zero
+	 */
+	public static boolean isNegativeNonZeroNumber(final Number toCheck) {
+		if (toCheck == null) {
+			return false;
+		}
+		return toCheck.doubleValue() < 0;
 	}
 
 	/**
@@ -41,7 +62,7 @@ public final class Assertive {
 	 * @return true if toTest is not null and contains characters besides spaces
 	 */
 	public static boolean isNonEmptyCharSequence(final CharSequence toTest) {
-		return StringUtils.isNotBlank(toTest);
+		return isNotBlank(toTest);
 	}
 
 	/**
@@ -63,6 +84,27 @@ public final class Assertive {
 			return true;
 		}
 		return false;
+	}
+
+	/**
+	 * @param toCheck
+	 *            long
+	 * @return boolean true if Number is positive and not zero
+	 */
+	public static boolean isPositiveNonZeroNumber(final long toCheck) {
+		return toCheck > 0;
+	}
+
+	/**
+	 * @param toCheck
+	 *            {@link Number}
+	 * @return boolean true if Number is non null, positive and not zero
+	 */
+	public static boolean isPositiveNonZeroNumber(final Number toCheck) {
+		if (toCheck == null) {
+			return false;
+		}
+		return toCheck.doubleValue() > 0;
 	}
 
 }

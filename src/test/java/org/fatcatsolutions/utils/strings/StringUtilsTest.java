@@ -5,16 +5,15 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
+@SuppressWarnings("static-method")
 public final class StringUtilsTest {
 
-	@SuppressWarnings("static-method")
 	@Test(timeout = 100L)
 	public void constants() {
 		assertThat(StringUtils.EMPTY_STRING, equalTo(""));
 		assertThat(StringUtils.EMPTY_CHARSEQUENCE.toString(), equalTo(""));
 	}
 
-	@SuppressWarnings("static-method")
 	@Test(timeout = 100L)
 	public void defaultToEmptyIfBlank() {
 		final CharSequence toTest = "";
@@ -24,7 +23,7 @@ public final class StringUtilsTest {
 		assertThat(StringUtils.defaultToEmptyIfBlank("some string"), equalTo("some string"));
 	}
 
-	@SuppressWarnings({ "boxing", "static-method" })
+	@SuppressWarnings({ "boxing" })
 	@Test(timeout = 100L)
 	public void isBlank() {
 		assertThat(StringUtils.isBlank(""), is(true));
@@ -34,7 +33,7 @@ public final class StringUtilsTest {
 		assertThat(StringUtils.isBlank("another string"), is(false));
 	}
 
-	@SuppressWarnings({ "boxing", "static-method" })
+	@SuppressWarnings({ "boxing" })
 	@Test(timeout = 100L)
 	public void isNotBlank() {
 		assertThat(StringUtils.isNotBlank(""), is(false));
