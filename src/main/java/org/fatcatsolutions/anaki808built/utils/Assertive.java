@@ -32,7 +32,7 @@ public final class Assertive {
 		if (toTest == null) {
 			return false;
 		}
-		return StringUtils.isNotBlank(toTest);
+		return org.fatcatsolutions.anaki808built.utils.strings.StringUtils.isNotBlank(toTest);
 	}
 
 	/**

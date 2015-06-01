@@ -30,4 +30,13 @@ public final class StringUtils {
 		return org.apache.commons.lang3.StringUtils.isBlank(toCheck);
 	}
 
+	/**
+	 * @param toCheck
+	 *            {@link CharSequence} to check
+	 * @return boolean Returns true if the CharSequence to check is not null and contains text other then white space
+	 */
+	public static boolean isNotBlank(final CharSequence toCheck) {
+		return org.apache.commons.lang3.StringUtils.isNotBlank(toCheck);
+	}
+
 }

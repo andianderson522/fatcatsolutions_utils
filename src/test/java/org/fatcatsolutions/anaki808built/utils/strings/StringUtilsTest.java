@@ -3,7 +3,6 @@ package org.fatcatsolutions.anaki808built.utils.strings;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 
-import org.fatcatsolutions.anaki808built.utils.strings.StringUtils;
 import org.junit.Test;
 
 public final class StringUtilsTest {
@@ -33,6 +32,16 @@ public final class StringUtilsTest {
 		assertThat(StringUtils.isBlank(null), is(true));
 		assertThat(StringUtils.isBlank(new StringBuilder("this. is a string")), is(false));
 		assertThat(StringUtils.isBlank("another string"), is(false));
+	}
+
+	@SuppressWarnings({ "boxing", "static-method" })
+	@Test(timeout = 100L)
+	public void isNotBlank() {
+		assertThat(StringUtils.isNotBlank(""), is(false));
+		assertThat(StringUtils.isNotBlank("     "), is(false));
+		assertThat(StringUtils.isNotBlank(null), is(false));
+		assertThat(StringUtils.isNotBlank(new StringBuilder("this. is a string")), is(true));
+		assertThat(StringUtils.isNotBlank("another string"), is(true));
 	}
 
 }
