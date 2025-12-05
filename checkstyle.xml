@@ -35,7 +35,11 @@
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
         <!-- Checks for imports -->
-        <module name="AvoidStarImport"/>
+        <module name="AvoidStarImport">
+            <property name="excludes" value="java.lang.Math,org.junit.Assert"/>
+            <property name="allowClassImports" value="false"/>
+            <property name="allowStaticMemberImports" value="true"/>
+        </module>
         <module name="IllegalImport"/>
         <module name="RedundantImport"/>
         <module name="UnusedImports">
